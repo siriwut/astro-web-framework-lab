@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import { React, ReactDOM } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My E-commerce Store</title>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <Header />
+    <main class="container mx-auto p-4">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
