@@ -14,7 +14,7 @@
       "@styles/*": ["src/styles/*"],
       "@pages/*": ["src/pages/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@types/*": ["src/types/*"]
+      "@type/*": ["src/type/*"]
     },
     "esModuleInterop": true,
     "skipLibCheck": true,

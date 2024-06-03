@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ProductType } from '@types/product.type'
+import { ProductType } from '@type/product.type'
 
 export interface ProductDetailPropsType {
   product: ProductType
