@@ -1,6 +1,6 @@
-import React from 'react'
+import { FC } from 'react'
 
-const Breadcrumbs: React.FC = () => {
+const Breadcrumbs: FC = () => {
   return (
     <nav className="text-sm mb-4">
       <ul className="flex space-x-2">

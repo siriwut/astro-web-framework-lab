@@ -1,56 +1,20 @@
-import React from 'react'
+import { FC } from 'react'
 
-interface Product {
+export interface Product {
   id: number
   name: string
   price: number
   image: string
 }
 
-const products: Product[] = [
-  {
-    id: 1,
-    name: 'Product 1',
-    price: 50,
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 2,
-    name: 'Product 2',
-    price: 75,
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 3,
-    name: 'Product 3',
-    price: 100,
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 4,
-    name: 'Product 4',
-    price: 100,
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 5,
-    name: 'Product 5',
-    price: 100,
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 6,
-    name: 'Product 6',
-    price: 100,
-    image: 'https://via.placeholder.com/150',
-  },
-  // Add more products as needed
-]
+export interface ProductListProps {
+  products: Product[]
+}
 
-const ProductList: React.FC = () => {
+const ProductList: FC<ProductListProps> = ({ products }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      {products.map((product) => (
+      {products?.map((product) => (
         <div
           key={product.id}
           className="bg-white p-4 rounded shadow-md text-center"

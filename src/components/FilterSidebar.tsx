@@ -1,6 +1,6 @@
-import React from 'react'
+import { FC } from 'react'
 
-const FilterSidebar: React.FC = () => {
+const FilterSidebar: FC = () => {
   return (
     <aside className="w-64 p-4 bg-gray-100 rounded">
       <h2 className="text-lg font-bold mb-4">Filters</h2>

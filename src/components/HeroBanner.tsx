@@ -1,6 +1,6 @@
-import React from 'react'
+import { FC } from 'react'
 
-const HeroBanner: React.FC = () => {
+const HeroBanner: FC = () => {
   return (
     <div className="relative bg-gray-900 text-white p-8 flex items-center justify-center h-96">
       <div className="text-center">

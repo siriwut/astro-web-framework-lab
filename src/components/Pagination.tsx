@@ -1,6 +1,6 @@
-import React from 'react'
+import { FC } from 'react'
 
-const Pagination: React.FC = () => {
+const Pagination: FC = () => {
   return (
     <div className="flex justify-center my-4">
       <a

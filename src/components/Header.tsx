@@ -1,6 +1,6 @@
-import React from 'react'
+import { FC } from 'react'
 
-const Header: React.FC = () => {
+const Header: FC = () => {
   return (
     <header className="bg-white shadow-md p-4">
       <div className="container mx-auto flex justify-between items-center">
